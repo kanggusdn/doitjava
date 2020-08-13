@@ -13,7 +13,7 @@ public class CharEx1 {
 		char ch3 = 67;
 		System.out.println(ch2);
 		System.out.println(ch3);
-
+		
 		char ch4 = 'a';
 		int num4 = ch4;
 		System.out.println(num4);
