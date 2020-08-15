@@ -1,11 +1,9 @@
-package personal;
+package doit;
 
 public class Unary {
 
 	public static void main(String[] args) {
-        int a = 20, b = 20;
-		
-		int c = 400, d = 500, e = 600;
+		int a = 10, b = 20;
 		
 		System.out.println("a++ = "+ a++ + ", ++b = " + (++b));
 		System.out.println("a = " + a + ", b = " +b);
