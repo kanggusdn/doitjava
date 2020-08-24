@@ -9,7 +9,7 @@ public class BreakEx {
 		case 2: System.out.println("num은 1입니다.");
 			break; //switch문을 파괴하는 break입니다.
 		default:
-			System.out.println("num은 1과 2가 아닌 다른 수입ㅂ니다.");
+			System.out.println("num은 1과 2가 아닌 다른 수입니다.");
 		}
 		while(true) {	//조건이 true이면 무한 반복문입니다.
 			System.out.println("반복중.." + num);
