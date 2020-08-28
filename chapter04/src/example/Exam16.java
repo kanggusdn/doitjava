@@ -18,5 +18,6 @@ public class Exam16 {
 		}
 			System.out.println();
 		}
+		sc.close();
 	}
 }

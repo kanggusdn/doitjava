@@ -31,5 +31,6 @@ public class Exam19 {
 		}
 			for(int i=0; i<line*2 -1; i++)
 				System.out.print("*");
+			sc.close();
 		}
 }

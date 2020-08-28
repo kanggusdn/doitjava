@@ -57,5 +57,6 @@ public class Exam20 {
 				}
 				System.out.println();
 			}
+				sc.close();
 	}
 }

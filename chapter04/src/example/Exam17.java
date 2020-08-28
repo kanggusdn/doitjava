@@ -21,6 +21,7 @@ public class Exam17 {
 			}
 				System.out.println();
 		}
+			sc.close();
 	}
 }
 
