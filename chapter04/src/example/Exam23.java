@@ -31,5 +31,5 @@ public class Exam23 {
 	  if(!isCorrect) { 
 	    System.out.println("아쉽습니다. 정답을"+MAX_OPPORTUNITIES+"번 시도에 맞추지 못했습니다."); 
 	 }
-	}    
+	}
 } 
