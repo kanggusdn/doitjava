@@ -21,8 +21,8 @@ public class Exam22_ {
 		user = sc.nextInt();	// 0, 1, 2 이외의 입력을 재입력할 수 있도록 합니다.
 		
 		/* 결과값 출력 */
-		System.out.println("컴퓨터 : " + (com == 0 ? "가위" : (com == 1 ? "바위" : "보")));
-		System.out.println("유저 : " + (com == 0 ? "가위" : (com == 1 ? "바위" : "보")));
+		System.out.println("컴퓨터 : " + (com == GA ? "가위" : (com == BA ? "바위" : "보")));
+		System.out.println("유저 : " + (com == GA ? "가위" : (user == BA ? "바위" : "보")));
 		if((com == GA && user == BA) || (com == BA && user == BO) || (com == BO && user == GA)) {
 			System.out.println("유저 승");
 			score += 100;
@@ -33,8 +33,17 @@ public class Exam22_ {
 			System.out.println("컴퓨터 승");
 			life--;
 		}
+		
+		/* 현재 점수와 남은 목숨 출력 */
+		System.out.println("현재 점수 : " + score);
+		System.out.println("남은 라이프 : " + life);
+		
+		/* 목숨이 0이 되면 게임을 종료 */
+		if(life == 0) {
+			System.out.println("라이프가 0이라서 게임을 종료합니다.");
+			sc.close();
+			break;
+			}
 		}
 	}
 }
-/* 현재 점수와 남은 목숨 출력 */
-/* 목숨이 0이 되면 게임을 종료 */
