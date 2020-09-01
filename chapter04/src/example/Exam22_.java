@@ -22,7 +22,7 @@ public class Exam22_ {
 		
 		/* 결과값 출력 */
 		System.out.println("컴퓨터 : " + (com == GA ? "가위" : (com == BA ? "바위" : "보")));
-		System.out.println("유저 : " + (com == GA ? "가위" : (user == BA ? "바위" : "보")));
+		System.out.println("유저 : " + (user == GA ? "가위" : (user == BA ? "바위" : "보")));
 		if((com == GA && user == BA) || (com == BA && user == BO) || (com == BO && user == GA)) {
 			System.out.println("유저 승");
 			score += 100;
