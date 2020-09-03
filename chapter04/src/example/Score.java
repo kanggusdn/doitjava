@@ -24,7 +24,6 @@ public class Score {
 		E = sc.nextInt();
 		System.out.println("수학 점수 입력: ");
 		M = sc.nextInt();
-		char grade = 0;
 		int sum = K + E + M;
 		double avg = sum / 3.0;
 
@@ -37,12 +36,11 @@ public class Score {
 		} else {
 			System.out.println("F등급입니다.");
 		}
-	    System.out.println("당신의 평균 점수는 " + avg + "점이고 " + grade + "등급입니다.");
 	    sc.close();
 		}
 }
 
-/*
+/* int grade = 0;
  * if(avg >= 91) {
  * grade = 'A';
  * } else if(avg >= 81) {
