@@ -2,7 +2,7 @@ package chapter12;
 
 public class GenericMethod {
 	public static <T, V> double makeRectangle(Point<T, V> p1, Point<T, V> p2) {
-		double left = ((Number)p1.getX()).doubleValue();
+		double left = ((Number)p1.getX()).doubleValue();	//Number(최상위) 이하의 수식을 사용 가능
 		double right = ((Number)p2.getX()).doubleValue();
 		double top = ((Number)p1.getY()).doubleValue();
 		double bottom = ((Number)p2.getY()).doubleValue();
