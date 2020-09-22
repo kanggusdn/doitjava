@@ -1,0 +1,26 @@
+package chapter12;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListExample {
+	public static void main(String[] args) {
+		List<String> list1 = new ArrayList<String>();
+		List<String> list2 = new LinkedList<String>();
+		long startTime;
+		long endTime;
+		startTime = System.nanoTime();
+		for (int i = 0; i < 10000; i++) {
+			list1.add(0, String.valueOf(i));	//문자로 바꿔서 제일 앞에 투입
+		}
+		endTime = System.nanoTime();
+		System.out.println("ArrayList 걸린시간: " + (endTime - startTime) + " ns");
+		startTime = System.nanoTime();
+		for (int i = 0; i < 10000; i++) {
+			list2.add(0, String.valueOf(i));	//기본적으로는 링크드 리스트가 더 빠름
+		}
+		endTime = System.nanoTime();
+		System.out.println("LinkedList 걸린시간: " + (endTime - startTime) + " ns");
+	}
+}

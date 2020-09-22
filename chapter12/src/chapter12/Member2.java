@@ -1,36 +1,39 @@
 package chapter12;
 
-public class Member implements Comparable<Member> {
+import java.util.Comparator;
+
+public class Member2 implements Comparator<Member2> {
 	private int memberId;
 	private String memberName;
-	
-	public Member(int memberId, String memberName) {
+
+	public Member2(int memberId, String memberName) {
 		this.memberId = memberId;
 		this.memberName = memberName;
 	}
-	
+
 	public int getMemberId() {
 		return memberId;
 	}
-	
+
 	public void setMemberId(int memberId) {
 		this.memberId = memberId;
 	}
-	
+
 	public String getMemberName() {
 		return memberName;
 	}
+
 	public void setMemberName(String memberName) {
 		this.memberName = memberName;
 	}
-	
+
 	@Override
 	public String toString() {
 		return memberName + " 회원님의 아이디는 " + memberId + "입니다.";
 	}
-	
+
 	@Override
-	public int compareTo(Member member) {
-		return (this.memberId - member.memberId)*(-1);	//내림차순으로 정렬하기 위해 -1을 추가
+	public int compare(Member2 mem1, Member2 mem2) {
+		return mem1.getMemberId() - mem2.getMemberId(); // 내림차순으로 정렬하기 위해 -1을 추가
 	}
 }
