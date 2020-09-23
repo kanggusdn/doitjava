@@ -34,6 +34,6 @@ public class Member2 implements Comparator<Member2> {
 
 	@Override
 	public int compare(Member2 mem1, Member2 mem2) {
-		return mem1.getMemberId() - mem2.getMemberId(); // 내림차순으로 정렬하기 위해 -1을 추가
+		return mem1.getMemberId() - mem2.getMemberId();
 	}
 }
