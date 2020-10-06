@@ -1,7 +1,6 @@
 package fp;
 
 import java.util.ArrayList;
-import utils.Define;
 
 public class Subject {
 	private String subjectName;
@@ -21,7 +20,7 @@ public class Subject {
 	}
 
 	public void setSubjectName(String subjectName) {
-		this.subjectName = sunjectName;
+		this.subjectName = subjectName;
 	}
 
 	public int getSubjectId() {

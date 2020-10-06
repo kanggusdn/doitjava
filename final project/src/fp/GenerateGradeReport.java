@@ -2,15 +2,6 @@ package fp;
 
 import java.util.ArrayList;
 
-import grade.BasicEvaluation;
-import grade.GradeEvaluation;
-import grade.MajorEvaluation;
-import school.School;
-import school.Score;
-import school.Student;
-import school.Subject;
-import utils.Define;
-
 public class GenerateGradeReport {
 	School school = School.getInstance();
 	public static final String TITLE = " 수강생 학점 \t\t\n";

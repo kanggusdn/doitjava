@@ -37,4 +37,12 @@ public class School {
 	public void setSubjectList(ArrayList<Subject> subjectList) {
 		this.subjectList = subjectList;
 	}
+
+	public static String getSCHOOL_NAME() {
+		return SCHOOL_NAME;
+	}
+
+	public static void setSCHOOL_NAME(String sCHOOL_NAME) {
+		SCHOOL_NAME = sCHOOL_NAME;
+	}
 }

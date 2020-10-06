@@ -1,14 +1,7 @@
 package fp;
 
-import school.School;
-import school.Score;
-import school.Student;
-import school.Subject;
-import school.report.GenerateGradeReport;
-import utils.Define;
-
 public class TestMain {
-	School goodSchool = school.getInstance();
+	School goodSchool = School.getInstance();
 	Subject korean;
 	Subject math;
 	Subject dance;
@@ -29,7 +22,7 @@ public class TestMain {
 		korean = new Subject("국어", Define.KOREAN);
 		math = new Subject("수학", Define.MATH);
 		dance = new Subject("방송 댄스", Define.DANCE);
-		
+
 		dance.setGradeType(Define.PF_TYPE);
 
 		goodSchool.addSubject(korean);
@@ -61,7 +54,7 @@ public class TestMain {
 		math.register(student3);
 		math.register(student4);
 		math.register(student5);
-		
+
 		dance.register(student1);
 		dance.register(student2);
 		dance.register(student3);
