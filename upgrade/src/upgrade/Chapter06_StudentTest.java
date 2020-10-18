@@ -1,6 +1,6 @@
 package upgrade;
 
-public class Chapter06_StudentTest1 {
+public class Chapter06_StudentTest {
 	public static void main(String[] args) {
 		System.out.println(Chapter06_Student2.getSerialNum());
 
