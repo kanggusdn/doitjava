@@ -38,11 +38,11 @@ class Eagle extends Animal {
 	}
 }
 
-public class Chapter08_AnimalTest1 {
+public class Chapter08_AnimalTest {
 	ArrayList<Animal> aniList = new ArrayList<Animal>();
 
 	public static void main(String[] args) {
-		Chapter08_AnimalTest1 aTest = new Chapter08_AnimalTest1();
+		Chapter08_AnimalTest aTest = new Chapter08_AnimalTest();
 		aTest.addAnimal();
 		System.out.println("원래 형으로 다운 캐스팅");
 		aTest.testCasting();
